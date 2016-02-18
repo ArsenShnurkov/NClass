@@ -619,6 +619,6 @@ namespace PdfSharp.Pdf.Content
       //public bool HasStream;
     }
 
-    List<CObject> stack = new List<CObject>();
+    //List<CObject> stack = new List<CObject>();
   }
 }

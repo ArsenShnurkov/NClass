@@ -251,7 +251,7 @@ namespace PdfSharp.Pdf.Security
 
 #if true
       // Try owner password first
-      byte[] password = PdfEncoders.RawEncoding.GetBytes(inputPassword);
+      /*byte[] password = */PdfEncoders.RawEncoding.GetBytes(inputPassword);
       InitWidhOwnerPassword(documentID, inputPassword, oValue, pValue, strongEncryption);
       if (EqualsKey(uValue, keyLength))
       {
@@ -261,7 +261,7 @@ namespace PdfSharp.Pdf.Security
       this.document.SecuritySettings.hasOwnerPermissions = false;
 
       // Now try user password
-      password = PdfEncoders.RawEncoding.GetBytes(inputPassword);
+      /*password =*/ PdfEncoders.RawEncoding.GetBytes(inputPassword);
       InitWidhUserPassword(documentID, inputPassword, oValue, pValue, strongEncryption);
       if (!EqualsKey(uValue, keyLength))
         return PasswordValidity.Invalid;

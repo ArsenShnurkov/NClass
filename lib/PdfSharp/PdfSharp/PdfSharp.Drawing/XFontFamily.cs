@@ -160,7 +160,7 @@ namespace PdfSharp.Drawing
     {
 #if GDI && !WPF
 #if DEBUG
-      int gdiResult = this.gdiFamily.GetEmHeight((FontStyle)style);
+      /*int gdiResult =*/ this.gdiFamily.GetEmHeight((FontStyle)style);
       //int wpfResult = FontHelper.GetWpfValue(this, style, GWV.GetEmHeight);
 #endif
       return this.gdiFamily.GetEmHeight((FontStyle)style);

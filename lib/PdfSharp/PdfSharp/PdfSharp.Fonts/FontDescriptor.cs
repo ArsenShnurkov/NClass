@@ -49,16 +49,17 @@ namespace PdfSharp.Fonts
   /// </summary>
   internal class FontDescriptor
   {
-    /// <summary>
+	/*
+	/// <summary>
     /// 
     /// </summary>
     public string FontFile
     {
       get { return this.fontFile; }
-    }
-    protected string fontFile;
+    }*/
+    //protected string fontFile;
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public string FontType
@@ -66,6 +67,7 @@ namespace PdfSharp.Fonts
       get { return this.fontType; }
     }
     protected string fontType;
+    */
 
     /// <summary>
     /// 
@@ -76,7 +78,7 @@ namespace PdfSharp.Fonts
     }
     protected string fontName;
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public string FullName
@@ -84,8 +86,9 @@ namespace PdfSharp.Fonts
       get { return this.fullName; }
     }
     protected string fullName;
+    */
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public string FamilyName
@@ -93,8 +96,9 @@ namespace PdfSharp.Fonts
       get { return this.familyName; }
     }
     protected string familyName;
+	*/
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public string Weight
@@ -102,6 +106,7 @@ namespace PdfSharp.Fonts
       get { return this.weight; }
     }
     protected string weight;
+	*/
 
     /// <summary>
     /// Gets a value indicating whether this instance belongs to a bold font.
@@ -164,7 +169,7 @@ namespace PdfSharp.Fonts
     }
     protected int yMax;
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public bool IsFixedPitch
@@ -172,6 +177,7 @@ namespace PdfSharp.Fonts
       get { return this.isFixedPitch; }
     }
     protected bool isFixedPitch;
+    */
 
     //Rect FontBBox;
 
@@ -211,7 +217,7 @@ namespace PdfSharp.Fonts
     }
     protected int strikeoutSize;
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public string Version
@@ -219,6 +225,7 @@ namespace PdfSharp.Fonts
       get { return this.version; }
     }
     protected string version;
+    */
 
     ///// <summary>
     ///// 
@@ -229,7 +236,7 @@ namespace PdfSharp.Fonts
     //}
     //protected string notice;
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public string EncodingScheme
@@ -237,6 +244,7 @@ namespace PdfSharp.Fonts
       get { return this.encodingScheme; }
     }
     protected string encodingScheme;
+    */
 
     /// <summary>
     /// 
@@ -292,7 +300,7 @@ namespace PdfSharp.Fonts
     }
     protected int leading;
 
-    /// <summary>
+    /*/// <summary>
     /// 
     /// </summary>
     public int Flags
@@ -300,6 +308,7 @@ namespace PdfSharp.Fonts
       get { return this.flags; }
     }
     protected int flags;
+	*/
 
     /// <summary>
     /// 

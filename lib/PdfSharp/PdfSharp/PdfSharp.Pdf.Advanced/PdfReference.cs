@@ -74,7 +74,7 @@ namespace PdfSharp.Pdf.Advanced
       Debug.Assert(pdfObject.Reference == null, "Must not create iref for an object that already has one.");
       this.value = pdfObject;
 #if UNIQUE_IREF && DEBUG
-      this.uid = ++PdfReference.counter;
+		/*this.uid =*/ ++PdfReference.counter;
 #endif
     }
 
@@ -86,7 +86,7 @@ namespace PdfSharp.Pdf.Advanced
       this.objectID = objectID;
       this.position = position;
 #if UNIQUE_IREF && DEBUG
-      this.uid = ++PdfReference.counter;
+      /*this.uid = */++PdfReference.counter;
 #endif
     }
 
@@ -240,7 +240,7 @@ namespace PdfSharp.Pdf.Advanced
 
 #if UNIQUE_IREF && DEBUG
     static int counter = 0;
-    int uid;
+    //int uid;
 #endif
   }
 }

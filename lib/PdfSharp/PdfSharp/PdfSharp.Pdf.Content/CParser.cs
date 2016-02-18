@@ -44,12 +44,12 @@ namespace PdfSharp.Pdf.Content
   /// </summary>
   internal sealed class CParser
   {
-    PdfPage page;
+    //PdfPage page;
     CLexer lexer;
 
     public CParser(PdfPage page)
     {
-      this.page = page;
+      //this.page = page;
       PdfContent content = page.Contents.CreateSingleContent();
       byte[] bytes = content.Stream.Value;
       this.lexer = new CLexer(bytes);

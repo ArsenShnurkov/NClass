@@ -173,19 +173,19 @@ namespace PdfSharp.Pdf
     public sealed class ArrayElements : IList<PdfItem>, ICloneable
     {
       List<PdfItem> elements;
-      PdfArray owner;
+      //PdfArray owner;
 
       internal ArrayElements(PdfArray array)
       {
         this.elements = new List<PdfItem>();
-        this.owner = array;
+        //this.owner = array;
       }
 
       object ICloneable.Clone()
       {
         ArrayElements elements = (ArrayElements)MemberwiseClone();
         elements.elements = new List<PdfItem>(elements.elements);
-        elements.owner = null;
+        //elements.owner = null;
         return elements;
       }
 
@@ -202,7 +202,7 @@ namespace PdfSharp.Pdf
       /// </summary>
       internal void SetOwner(PdfArray array)
       {
-        this.owner = array;
+        //this.owner = array;
         array.elements = this;
       }
 

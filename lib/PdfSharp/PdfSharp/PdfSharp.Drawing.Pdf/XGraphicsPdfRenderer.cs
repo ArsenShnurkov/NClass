@@ -619,7 +619,7 @@ namespace PdfSharp.Drawing.Pdf
         XForm form = (XForm)image;
         form.Finish();
 
-        PdfFormXObject pdfForm = Owner.FormTable.GetForm(form);
+        /*PdfFormXObject pdfForm =*/ Owner.FormTable.GetForm(form);
 
         double cx = width / image.PointWidth;
         double cy = height / image.PointHeight;
@@ -669,7 +669,7 @@ namespace PdfSharp.Drawing.Pdf
         XForm xForm = (XForm)image;
         xForm.Finish();
 
-        PdfFormXObject pdfForm = Owner.FormTable.GetForm(xForm);
+        /*PdfFormXObject pdfForm =*/ Owner.FormTable.GetForm(xForm);
 
         double cx = width / image.PointWidth;
         double cy = height / image.PointHeight;

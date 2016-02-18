@@ -57,12 +57,12 @@ namespace PdfSharp.Drawing
     {
       XBrush xbrush;
       SolidBrush solidBrush;
-      LinearGradientBrush lgBrush;
+      //LinearGradientBrush lgBrush;
       if ((solidBrush = brush as SolidBrush) != null)
       {
         xbrush = new XSolidBrush(solidBrush.Color);
       }
-      else if ((lgBrush = brush as LinearGradientBrush) != null)
+      else if ((/*lgBrush =*/ brush as LinearGradientBrush) != null)
       {
         // TODO: xbrush = new LinearGradientBrush(lgBrush.Rectangle, lgBrush.co(solidBrush.Color);
         throw new NotImplementedException("Brush type not yet supported by PDFsharp.");

@@ -69,14 +69,14 @@ namespace PdfSharp.Drawing.BarCodes
 
     public DataMatrixImage(string text, string encoding, int rows, int columns)
     {
-      this.text = text;
-      this.encoding = encoding;
+      //this.text = text;
+      //this.encoding = encoding;
       this.rows = rows;
       this.columns = columns;
     }
 
-    string text;
-    string encoding;
+    //string text;
+    //string encoding;
     int rows;
     int columns;
 

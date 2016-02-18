@@ -104,7 +104,7 @@ namespace PdfSharp.Drawing.Pdf
     int realizedLineJoin = -1;
     double realizedMiterLimit = -1;
     XDashStyle realizedDashStyle = (XDashStyle)(-1);
-    string realizedDashPattern;
+    //string realizedDashPattern;
     XColor realizedStrokeColor = XColor.Empty;
 
     public void RealizePen(XPen pen, PdfColorMode colorMode)
@@ -194,7 +194,7 @@ namespace PdfSharp.Drawing.Pdf
               // HACK: I romove the if clause
               //if (this.realizedDashPattern != pattern)
               {
-                this.realizedDashPattern = pattern;
+                //this.realizedDashPattern = pattern;
                 this.renderer.Append(pattern);
               }
             }

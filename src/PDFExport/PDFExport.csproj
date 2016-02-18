@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{53E9092C-848E-4D6A-9E8A-2ECD71BAEF04}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -55,9 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
@@ -104,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\lib\PdfSharp\PdfSharp\PdfSharp.csproj">
-      <Project>{5384ce57-1f94-4d22-860d-2e9c1ac12ddf}</Project>
+      <Project>{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}</Project>
       <Name>PdfSharp</Name>
     </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
@@ -124,7 +120,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Document-pdf-16.PNG" />
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -132,6 +127,7 @@
     </None>
     <None Include="Resources\NClass.png" />
     <None Include="Resources\Document-pdf-48.png" />
+    <None Include="Resources\Document-pdf-16.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Lang\Strings.de.resx">

@@ -126,6 +126,7 @@ namespace PdfSharp.Pdf.Internal
       return false;
     }
 
+#if false
     /// <summary>
     /// Converts WinAnsi to Unicode characters.
     /// </summary>
@@ -149,5 +150,6 @@ namespace PdfSharp.Pdf.Internal
       /* E0 */ '\u00E0', '\u00E1', '\u00E2', '\u00E3', '\u00E4', '\u00E5', '\u00E6', '\u00E7', '\u00E8', '\u00E9', '\u00EA', '\u00EB', '\u00EC', '\u00ED', '\u00EE', '\u00EF',
       /* F0 */ '\u00F0', '\u00F1', '\u00F2', '\u00F3', '\u00F4', '\u00F5', '\u00F6', '\u00F7', '\u00F8', '\u00F9', '\u00FA', '\u00FB', '\u00FC', '\u00FD', '\u00FE', '\u00FF',
     };
+#endif
   }
 }

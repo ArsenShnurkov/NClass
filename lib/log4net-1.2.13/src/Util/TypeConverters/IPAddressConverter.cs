@@ -135,10 +135,11 @@ namespace log4net.Util.TypeConverters
 		}
 
 		#endregion
-
+#if false
 		/// <summary>
 		/// Valid characters in an IPv4 or IPv6 address string. (Does not support subnets)
 		/// </summary>
 		private static readonly char[] validIpAddressChars = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','A','B','C','D','E','F','x','X','.',':','%'};
+#endif
 	}
 }

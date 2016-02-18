@@ -60,13 +60,13 @@ namespace PdfSharp.Fonts.OpenType
           {
             fontData = new FontData(data);
             this.fontDataTable.Add(key, fontData);
-            this.lastEntry = fontData;
+            //this.lastEntry = fontData;
           }
         }
       }
       return fontData;
     }
-    private FontData lastEntry;
+    //private FontData lastEntry;
 
     public bool UnregisterFontData(FontData fontData)
     {

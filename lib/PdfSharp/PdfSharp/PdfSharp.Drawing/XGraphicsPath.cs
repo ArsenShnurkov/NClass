@@ -1416,7 +1416,7 @@ namespace PdfSharp.Drawing
             double lineSpace = font.GetHeight();
             int cellSpace = font.FontFamily.GetLineSpacing(font.Style);
             int cellAscent = font.FontFamily.GetCellAscent(font.Style);
-            int cellDescent = font.FontFamily.GetCellDescent(font.Style);
+            /*int cellDescent =*/ font.FontFamily.GetCellDescent(font.Style);
             double cyAscent = lineSpace * cellAscent / cellSpace;
             cyAscent = lineSpace * font.cellAscent / font.cellSpace;
             rc.Offset(0, (float)-cyAscent);

@@ -79,23 +79,23 @@ namespace PdfSharp.Drawing
       switch (pageUnit)
       {
         case XGraphicsUnit.Point:
-          this.pageSizePoints = new XSize(size.width, size.height);
+          //this.pageSizePoints = new XSize(size.width, size.height);
           break;
 
         case XGraphicsUnit.Inch:
-          this.pageSizePoints = new XSize(XUnit.FromInch(size.width), XUnit.FromInch(size.height));
+          //this.pageSizePoints = new XSize(XUnit.FromInch(size.width), XUnit.FromInch(size.height));
           break;
 
         case XGraphicsUnit.Millimeter:
-          this.pageSizePoints = new XSize(XUnit.FromMillimeter(size.width), XUnit.FromMillimeter(size.height));
+          //this.pageSizePoints = new XSize(XUnit.FromMillimeter(size.width), XUnit.FromMillimeter(size.height));
           break;
 
         case XGraphicsUnit.Centimeter:
-          this.pageSizePoints = new XSize(XUnit.FromCentimeter(size.width), XUnit.FromCentimeter(size.height));
+          //this.pageSizePoints = new XSize(XUnit.FromCentimeter(size.width), XUnit.FromCentimeter(size.height));
           break;
 
         case XGraphicsUnit.Presentation:
-          this.pageSizePoints = new XSize(XUnit.FromPresentation(size.width), XUnit.FromPresentation(size.height));
+          //this.pageSizePoints = new XSize(XUnit.FromPresentation(size.width), XUnit.FromPresentation(size.height));
           break;
 
         default:
@@ -269,7 +269,7 @@ namespace PdfSharp.Drawing
       this.targetContext = PdfSharp.Internal.TargetContextHelper.TargetContext;
 #endif
       this.renderer = new PdfSharp.Drawing.Pdf.XGraphicsPdfRenderer(page, this, options);
-      this.pageSizePoints = new XSize(page.Width, page.Height);
+      //this.pageSizePoints = new XSize(page.Width, page.Height);
       switch (pageUnit)
       {
         case XGraphicsUnit.Point:
@@ -796,7 +796,7 @@ namespace PdfSharp.Drawing
       //}
     }
     XSize pageSize;
-    XSize pageSizePoints;
+    //XSize pageSizePoints;
 
     //public void Flush();
     //public void Flush(FlushIntention intention);
@@ -3184,7 +3184,7 @@ namespace PdfSharp.Drawing
             double lineSpace = font.GetHeight(this);
             int cellSpace = font.FontFamily.GetLineSpacing(font.Style);
             int cellAscent = font.FontFamily.GetCellAscent(font.Style);
-            int cellDescent = font.FontFamily.GetCellDescent(font.Style);
+            /*int cellDescent =*/ font.FontFamily.GetCellDescent(font.Style);
             double cyAscent = lineSpace * cellAscent / cellSpace;
             cyAscent = lineSpace * font.cellAscent / font.cellSpace;
             rect.Offset(0, (float)-cyAscent);
@@ -3782,7 +3782,7 @@ namespace PdfSharp.Drawing
     void CheckXPdfFormConsistence(XImage image)
     {
       XForm xForm = image as XForm;
-      XGraphicsPdfRenderer renderer;
+      //XGraphicsPdfRenderer renderer;
       if (xForm != null)
       {
         // Force disposing of XGraphics that draws the content
